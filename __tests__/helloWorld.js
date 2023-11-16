@@ -26,6 +26,14 @@ test('empty name should return Hello, my friend.', () => {
 
 // exe3
 
+// test 1
+
 test('JERRY should return "HELLO, JERRY!".', () => {
   expect(greet('JERRY')).toBe('HELLO, JERRY!');
+});
+
+// test 2
+
+test('JERRY should return "HELLO, ANNA!".', () => {
+  expect(greet('ANNA')).toBe('HELLO, ANNA!');
 });
