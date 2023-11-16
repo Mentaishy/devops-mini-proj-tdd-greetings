@@ -1,6 +1,7 @@
 const greet = require('../src/app.js');
 
 // exe1
+
 test('bob should return "Hello, Bob."', () => {
   expect(greet('Bob')).toBe('Hello, Bob.');
 });
@@ -39,9 +40,19 @@ test('JERRY should return "HELLO, ANNA!".', () => {
 });
 
 // exe 4
+
 // test 1
 
 test('Jill and Jane should return Hello, Jill and Jane.', () => {
   const result = greet(['Jill', 'Jane']);
   expect(result).toBe('Hello, Jill and Jane.');
+});
+
+// exe 5
+
+// test 1
+
+test('Amy, Brian and Charlotte should return "Hello, Amy, Brianand and Charlotte."', () => {
+  const result = greet(['Amy', 'Brian', 'Charlotte']);
+  expect(result).toBe('Hello, Amy, Brian and Charlotte.');
 });
