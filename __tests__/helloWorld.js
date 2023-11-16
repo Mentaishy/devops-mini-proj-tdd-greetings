@@ -1,9 +1,16 @@
 const greet = require('../src/app.js');
 
 // exe1
+// test 1
 
 test('bob should return "Hello, Bob."', () => {
   expect(greet('Bob')).toBe('Hello, Bob.');
+});
+
+// Test 2
+
+test('Bobette should return "Hello, Bobette."', () => {
+  expect(greet('Bobette')).toBe('Hello, Bobette.');
 });
 
 // exe2
@@ -48,6 +55,13 @@ test('Jill and Jane should return Hello, Jill and Jane.', () => {
   expect(result).toBe('Hello, Jill and Jane.');
 });
 
+// test 2
+
+test('Resul and Marwan should return Hello, Resul and Marwan.', () => {
+  const result = greet(['Resul', 'Marwan']);
+  expect(result).toBe('Hello, Resul and Marwan.');
+});
+
 // exe 5
 
 // test 1
@@ -57,10 +71,24 @@ test('Amy, Brian and Charlotte should return "Hello, Amy, Brianand and Charlotte
   expect(result).toBe('Hello, Amy, Brian and Charlotte.');
 });
 
+// test 2
+
+test('Killjoy, Viper and Fade should return "Hello, Killjoy, Viper and Fade."', () => {
+  const result = greet(['Killjoy', 'Viper', 'Fade']);
+  expect(result).toBe('Hello, Killjoy, Viper and Fade.');
+});
+
 // exe 6
 // test 1
 
-test('Amy, Brian and Charlotte should return "Hello, Amy, Brianand and Charlotte."', () => {
-  const result = greet(['Amy', 'Brian', 'Charlotte']);
-  expect(result).toBe('Hello, Amy, Brian and Charlotte.');
+test('Amy, BRIAN and Charlotte should return "Hello, Amy, Brianand and Charlotte."', () => {
+  const result = greet(['Amy', 'Charlotte', 'BRIAN']);
+  expect(result).toBe('Hello, Amy and Charlotte. AND HELLO BRIAN!');
+});
+
+// test 2
+
+test('REYNA, Raze and Viper should return "Hello, Raze and Viper. AND HELLO REYNA!"', () => {
+  const result = greet(['REYNA', 'Raze', 'Viper']);
+  expect(result).toBe('Hello, Raze and Viper. AND HELLO REYNA!');
 });
