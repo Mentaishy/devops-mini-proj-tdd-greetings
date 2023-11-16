@@ -23,3 +23,9 @@ test('undefined name should return Hello, my friend.', () => {
 test('empty name should return Hello, my friend.', () => {
   expect(greet('')).toBe('Hello, my friend.');
 });
+
+// exe3
+
+test('JERRY should return "HELLO, JERRY!".', () => {
+  expect(greet('JERRY')).toBe('HELLO, JERRY!');
+});
