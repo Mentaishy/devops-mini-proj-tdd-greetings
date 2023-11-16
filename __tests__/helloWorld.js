@@ -11,3 +11,9 @@ test('bob should return "Hello, Bob."', () => {
 test('null should return Hello, my friend.', () => {
   expect(greet(null)).toBe('Hello, my friend.');
 });
+
+//test 2
+
+test('undefined name should return Hello, my friend.', () => {
+  expect(greet(undefined)).toBe('Hello, my friend.');
+});
