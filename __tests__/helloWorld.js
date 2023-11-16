@@ -21,5 +21,5 @@ test('undefined name should return Hello, my friend.', () => {
 // test 3
 
 test('empty name should return Hello, my friend.', () => {
-  expect(greet('')).toBe('Hello, my friend.');
+  expect(greet("")).toBe('Hello, my friend.');
 });
