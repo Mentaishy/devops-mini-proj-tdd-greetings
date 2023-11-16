@@ -37,3 +37,11 @@ test('JERRY should return "HELLO, JERRY!".', () => {
 test('JERRY should return "HELLO, ANNA!".', () => {
   expect(greet('ANNA')).toBe('HELLO, ANNA!');
 });
+
+// exe 4
+// test 1
+
+test('Jill and Jane should return Hello, Jill and Jane.', () => {
+  const result = greet(['Jill', 'Jane']);
+  expect(result).toBe('Hello, Jill and Jane.');
+});
