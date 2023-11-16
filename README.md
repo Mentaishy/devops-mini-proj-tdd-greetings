@@ -1,3 +1,3 @@
 # devops-mini-proj-tdd-greetings
 
-authors : Benali El Manichi Marwwan and Ramadani Resul
+authors : Benali El Manichi Marwan and Ramadani Resul
