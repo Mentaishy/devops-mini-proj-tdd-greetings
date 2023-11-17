@@ -92,3 +92,23 @@ test('REYNA, Raze and Viper should return "Hello, Raze and Viper. AND HELLO REYN
   const result = greet(['REYNA', 'Raze', 'Viper']);
   expect(result).toBe('Hello, Raze and Viper. AND HELLO REYNA!');
 });
+
+// exe 7
+
+// test 1
+test('"Marie" and "fr" should return "Bonjour, Marie."', () => {
+  const result = greet(['Marie', 'fr']);
+  expect(result).toBe('Bonjour, Marie.');
+});
+
+// test 2
+test('"Marie" and "fr" should return "Bonjour, Marie."', () => {
+  const result = greet(['Marie', 'en']);
+  expect(result).toBe('Hello, Marie.');
+});
+
+// test 2
+test('"Marie" and "fr" should return "Bonjour, Marie."', () => {
+  const result = greet(['Marie', 'nl']);
+  expect(result).toBe('Hallo, Marie.');
+});
