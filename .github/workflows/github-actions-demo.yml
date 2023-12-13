@@ -1,0 +1,33 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+    pull_request:
+        types: [opened, edited]
+jobs:
+    Explore-GitHub-Actions:
+        runs-on: ubuntu-latest
+        steps:
+
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            - name: Start time of pipeline
+              run: echo "The pipeline started at $date"
+
+            - name: Format code
+              run: npm run prettier
+
+            - name: Lint code
+              run: npm run lint
+
+            - name: Test code with coverage
+              run: npm run test
+
+            - name: Build code
+              run: npm run build
+
+            - name: End of pipeline
+              run: echo "The pipeline ended at $date"
+
+            - name: Pipeline Success message
+              run: echo "PIPELINE SUCCESS WITHOUT ERRORS"
