@@ -20,5 +20,8 @@ jobs:
               run: npm run prettier
 
             - name: Lint code
-              run: npm run lint      
+              run: npm run lint
+
+            - name: Test code with coverage
+              run: npm run test        
               
