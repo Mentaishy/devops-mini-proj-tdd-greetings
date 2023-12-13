@@ -19,7 +19,7 @@ jobs:
 
             - name: Format code
               run: npm run prettier
-            
+
             - name: Lint code
               run: npm run lint
 
@@ -34,6 +34,3 @@ jobs:
 
             - name: Pipeline Success message
               run: echo "PIPELINE SUCCESS WITHOUT ERRORS"
-
-
-

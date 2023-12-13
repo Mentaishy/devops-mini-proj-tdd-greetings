@@ -45,6 +45,17 @@
             "path": "cz-conventional-changelog"
         }
     },
+    "jest": {
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+            "./src/**"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "lines": 80
+            }
+        }
+    },
     "dependencies": {
         "webpack-cli": "^5.1.4"
     }
