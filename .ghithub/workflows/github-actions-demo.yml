@@ -14,5 +14,8 @@ jobs:
               run: npm i
               
             - name: Start time of pipeline
-              run: echo "The pipeline started at $date"  
+              run: echo "The pipeline started at $date"
+
+            - name: Format code
+              run: npm run prettier    
               
