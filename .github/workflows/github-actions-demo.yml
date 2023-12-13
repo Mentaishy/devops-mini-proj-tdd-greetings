@@ -26,5 +26,8 @@ jobs:
             - name: Test code with coverage
               run: npm run test
 
+            - name: Build code
+              run: npm run build
+
 
 
