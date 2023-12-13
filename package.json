@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "nodemon -e '*' ./bin/www",
-        "prettier": "prettier --check .",
+        "prettier": "prettier ./src/** --check",
         "prettier:fix": "prettier --write .",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
