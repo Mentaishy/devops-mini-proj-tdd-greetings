@@ -13,3 +13,6 @@ jobs:
 
       - name: Installation of dependencies
         run: npm install
+
+      - name: Start time of pipeline
+        run: echo "The pipeline started at $date"
