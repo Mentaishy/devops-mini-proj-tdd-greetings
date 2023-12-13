@@ -1,27 +1,27 @@
 module.exports = {
   env: {
-    browser: true,
-    es2021: true,
-    jest: true
+      /* node , not browser */
+      node: true,
+      // commonjs ... modules.exports use
+      commonjs: true,
+      es2021: true,
+      jest: true,
   },
-  extends: 'standard',
+
+  extends: 'eslint:recommended',
   overrides: [
-    {
-      env: {
-        node: true
+      {
+          env: {
+              node: true,
+          },
+          files: ['.eslintrc.{js,cjs}'],
+          parserOptions: {
+              sourceType: 'script',
+          },
       },
-      files: ['.eslintrc.{js,cjs}'],
-      parserOptions: {
-        sourceType: 'script'
-      }
-    }
   ],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+      ecmaVersion: 'latest',
   },
-  ignorePatterns: ['tests/*.js'],
-  rules: {
-    semi: ['error', 'always']
-  }
-};
+  rules: {},
+}
