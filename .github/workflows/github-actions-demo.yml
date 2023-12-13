@@ -19,4 +19,9 @@ jobs:
 
             - name: Format code
               run: npm run prettier
+            
+            - name: Lint code
+              run: npm run lint
+
+
 
