@@ -17,5 +17,8 @@ jobs:
               run: echo "The pipeline started at $date"
 
             - name: Format code
-              run: npm run prettier    
+              run: npm run prettier
+
+            - name: Lint code
+              run: npm run lint      
               
