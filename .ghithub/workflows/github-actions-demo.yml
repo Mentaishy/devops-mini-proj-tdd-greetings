@@ -29,4 +29,7 @@ jobs:
               run: npm run build
 
             - name: End of pipeline
-              run: echo "The pipeline ended at $date"  
+              run: echo "The pipeline ended at $date"
+
+            - name: Pipeline Success message
+              run: echo "PIPELINE SUCCESS WITHOUT ERRORS"    
