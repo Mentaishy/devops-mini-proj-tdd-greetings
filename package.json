@@ -12,7 +12,8 @@
         "code:fix": "prettier --write . && eslint --fix .",
         "commit": "cz",
         "test": "jest --coverage",
-        "test:watch": "jest --watchAll"
+        "test:watch": "jest --watchAll",
+        "build": "webpack ./src/app.js -o public/"
     },
     "repository": {
         "type": "git",
@@ -43,5 +44,19 @@
         "commitizen": {
             "path": "cz-conventional-changelog"
         }
+    },
+    "jest": {
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+            "./src/**"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "lines": 80
+            }
+        }
+    },
+    "dependencies": {
+        "webpack-cli": "^5.1.4"
     }
 }
