@@ -15,7 +15,7 @@ jobs:
               run: npm i
 
             - name: Start time of pipeline
-              run: echo "The pipeline started at $date"
+              run: echo "The pipeline started at $(date)"
 
             - name: Format code
               run: npm run prettier
@@ -30,7 +30,7 @@ jobs:
               run: npm run build
 
             - name: End of pipeline
-              run: echo "The pipeline ended at $date"
+              run: echo "The pipeline ended at $(date)"
 
             - name: Pipeline Success message
               run: echo "PIPELINE SUCCESS WITHOUT ERRORS"
