@@ -1,5 +1,6 @@
 # devops-mini-proj-tdd-greetings
 
+Groupe 31
 # DevOps Mini-Projet 2
 Travail de recherche , mettre en place de l'integration continue avec les GitHub Actions
 
@@ -8,6 +9,11 @@ Travail de recherche , mettre en place de l'integration continue avec les GitHub
 - Membres du groupe :         Ramadani Resul
                               Benali El Manichi Marwan    
 
+Usage: npm run test for all the tests
+npm run code:fix for all the visual correction.
+
+Authors : Benali El Manichi Marwan and
+Ramadani Resul.
 
 ## Énoncé
 
